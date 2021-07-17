@@ -63,28 +63,27 @@ Let's begin by installing some of libraries we will use for this excercise as fo
 ```
 
     Requirement already satisfied: wptools in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (0.4.17)
-    Requirement already satisfied: certifi in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (2020.6.20)
-    Requirement already satisfied: pycurl in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (7.43.0.5)
     Requirement already satisfied: html2text in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (2020.1.16)
-    Requirement already satisfied: lxml in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (4.5.0)
+    Requirement already satisfied: pycurl in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (7.43.0.5)
+    Requirement already satisfied: lxml in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (4.6.1)
+    Requirement already satisfied: certifi in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wptools) (2021.5.30)
     Requirement already satisfied: wikipedia in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (1.4.0)
-    Requirement already satisfied: beautifulsoup4 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wikipedia) (4.8.2)
     Requirement already satisfied: requests<3.0.0,>=2.0.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wikipedia) (2.24.0)
+    Requirement already satisfied: beautifulsoup4 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wikipedia) (4.8.2)
     Requirement already satisfied: idna<3,>=2.5 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
     Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.25.11)
-    Requirement already satisfied: certifi>=2017.4.17 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.6.20)
+    Requirement already satisfied: certifi>=2017.4.17 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2021.5.30)
     Requirement already satisfied: chardet<4,>=3.0.2 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (3.0.4)
     Requirement already satisfied: soupsieve>=1.2 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from beautifulsoup4->wikipedia) (1.9.5)
     Requirement already satisfied: wordcloud in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (1.6.0)
-    Requirement already satisfied: matplotlib in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wordcloud) (3.1.3)
+    Requirement already satisfied: numpy>=1.6.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wordcloud) (1.19.5)
+    Requirement already satisfied: matplotlib in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wordcloud) (3.4.2)
     Requirement already satisfied: pillow in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wordcloud) (8.3.1)
-    Requirement already satisfied: numpy>=1.6.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from wordcloud) (1.18.1)
-    Requirement already satisfied: python-dateutil>=2.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (2.8.1)
-    Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (1.1.0)
-    Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (2.4.6)
+    Requirement already satisfied: pyparsing>=2.2.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (2.4.7)
+    Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (1.3.1)
     Requirement already satisfied: cycler>=0.10 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (0.10.0)
-    Requirement already satisfied: six in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from cycler>=0.10->matplotlib->wordcloud) (1.14.0)
-    Requirement already satisfied: setuptools in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from kiwisolver>=1.0.1->matplotlib->wordcloud) (57.2.0)
+    Requirement already satisfied: python-dateutil>=2.7 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from matplotlib->wordcloud) (2.8.1)
+    Requirement already satisfied: six in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from cycler>=0.10->matplotlib->wordcloud) (1.15.0)
     
 
 Importing the same,
@@ -112,10 +111,13 @@ url = 'https://raw.githubusercontent.com/MonashDataFluency/python-web-scraping/m
 urllib.request.urlretrieve(url, 'fortune_500_companies.csv')
 ```
 
+    The history saving thread hit an unexpected error (OperationalError('database is locked')).History will not be written to the database.
+    
 
 
 
-    ('fortune_500_companies.csv', <http.client.HTTPMessage at 0x1e497b5dd48>)
+
+    ('fortune_500_companies.csv', <http.client.HTTPMessage at 0x23702db6bc8>)
 
 
 
@@ -259,7 +261,7 @@ for idx, company in enumerate(wiki_search):
 ```
 
     1. Walmart :
-    Walmart, Criticism of Walmart, History of Walmart, Walmart (disambiguation), List of Walmart brands, Asda, Walmart Canada, Walmarting, People of Walmart, List of assets owned by Walmart
+    Walmart, Criticism of Walmart, History of Walmart, Walmart (disambiguation), Asda, List of Walmart brands, Walmart Canada, Walmarting, People of Walmart, Doug McMillon
     
     
     2. Exxon Mobil :
@@ -271,7 +273,7 @@ for idx, company in enumerate(wiki_search):
     
     
     4. Apple :
-    Apple, Apple Inc., Apple (disambiguation), IPhone, MacOS, IOS, A for Apple, Apple silicon, Apples to Apples, Apple TV
+    Apple, Apple Inc., Apple (disambiguation), IPhone, IOS, A for Apple, MacOS, Apple silicon, Apples to Apples, Apple TV
     
     
     5. UnitedHealth Group :
@@ -279,7 +281,7 @@ for idx, company in enumerate(wiki_search):
     
     
     6. McKesson :
-    McKesson Corporation, McKesson Europe, DeRay Mckesson, McKesson & Robbins scandal (1938), McKesson (disambiguation), Rexall (Canada), McKesson Plaza, Phillip Musica, LloydsPharmacy, Precious McKesson
+    McKesson Corporation, McKesson Europe, DeRay Mckesson, McKesson & Robbins scandal (1938), McKesson (disambiguation), Rexall (Canada), LloydsPharmacy, List of largest companies by revenue, Phillip Musica, McKesson Plaza
     
     
     7. CVS Health :
@@ -287,31 +289,31 @@ for idx, company in enumerate(wiki_search):
     
     
     8. Amazon.com :
-    Amazon (company), Amazon Prime Video, History of Amazon, Criticism of Amazon, List of Amazon products and services, Amazon Appstore, Amazon S3, List of mergers and acquisitions by Amazon, Amazon Prime, Amazon.ae
+    Amazon (company), Amazon Prime Video, History of Amazon, Criticism of Amazon, List of Amazon products and services, Amazon Appstore, Amazon.ae, Amazon S3, List of mergers and acquisitions by Amazon, List of Amazon locations
     
     
     9. AT&T :
-    AT&T, T, AT&T Mobility, AT&T Corporation, AT&T U-verse, T-Pain, T.A.T.u., Ford Model T, T-Series (company), Northrop T-38 Talon
+    AT&T, T, AT&T Mobility, AT&T Corporation, AT&T U-verse, T-Pain, T.A.T.u., Ford Model T, T-Series (company), T. and T.
     
     
     10. General Motors :
-    General Motors, General Motors India, History of General Motors, General Motors Vortec engine, List of General Motors factories, General Motors Chapter 11 reorganization, Vauxhall Motors, GMC (automobile), General Motors Canada, General Motors EV1
+    General Motors, History of General Motors, General Motors India, General Motors Vortec engine, General Motors Chapter 11 reorganization, List of General Motors factories, General Motors Firebird, Vauxhall Motors, GMC (automobile), General Motors Canada
     
     
     11. Ford Motor :
-    Ford Motor Company, Ford Trimotor, Lincoln Motor Company, Henry Ford, History of Ford Motor Company, Ford of Britain, Ford Germany, Henry Ford II, List of leaders of Ford Motor Company, Edsel Ford
+    Ford Motor Company, Lincoln Motor Company, Ford Trimotor, Henry Ford, History of Ford Motor Company, Ford Germany, Ford of Britain, Edsel Ford, Henry Ford II, List of leaders of Ford Motor Company
     
     
     12. AmerisourceBergen :
-    AmerisourceBergen, List of largest companies by revenue, Cardinal Health, Ornella Barra, Steven H. Collis, PharMerica, List of S&P 500 companies, The Vanguard Group, Remdesivir, MWI Veterinary Supply
+    AmerisourceBergen, List of largest companies by revenue, Cardinal Health, Ornella Barra, Steven H. Collis, Remdesivir, PharMerica, List of S&P 500 companies, The Vanguard Group, The Crime of the Century (2021 film)
     
     
     13. Chevron :
-    Chevron Corporation, Chevron, Chevron (insignia), Chevron Cars, Chevron Renaissance, Chevron Cars Ltd, Chevron House, Philip Chevron, Wound Chevron, Steven Donziger
+    Chevron Corporation, Chevron, Chevron (insignia), Chevron Renaissance, Chevron Cars, Chevron Cars Ltd, Wound Chevron, Philip Chevron, Chevron House, Steven Donziger
     
     
     14. Cardinal Health :
-    Cardinal Health, Cardinal, Catalent, Cordis (medical), Pyxis Corporation, Robert D. Walter, Northern cardinal, The Crime of the Century (2021 film), List of largest companies by revenue, S&P 500 Dividend Aristocrats
+    Cardinal Health, Cardinal, Catalent, Cordis (medical), Robert D. Walter, Northern cardinal, List of largest companies by revenue, The Crime of the Century (2021 film), Pyxis Corporation, S&P 500 Dividend Aristocrats
     
     
     15. Costco :
@@ -327,15 +329,15 @@ for idx, company in enumerate(wiki_search):
     
     
     18. General Electric :
-    General Electric, General Electric Company, General Electric GEnx, General Electric F404, General Electric CF6, General Electric F110, General Electric J85, General Electric Theater, General Electric T700, General Electric LM2500
+    General Electric, General Electric Company, General Electric GEnx, General Electric F404, General Electric CF6, General Electric F110, General Electric J85, General Electric Theater, General Electric LM2500, General Electric T700
     
     
     19. Walgreens Boots Alliance :
-    Walgreens Boots Alliance, Alliance Boots, Walgreens, Boots (company), Alliance Healthcare, Rosalind Brewer, Stefano Pessina, Boots Opticians, Deerfield, Illinois, Duane Reade
+    Walgreens Boots Alliance, Alliance Boots, Walgreens, Boots (company), Alliance Healthcare, Rosalind Brewer, Stefano Pessina, Boots Opticians, Deerfield, Illinois, Dow Jones Industrial Average
     
     
     20. JPMorgan Chase :
-    JPMorgan Chase, Chase Bank, JPMorgan Chase Tower (Houston), 2012 JPMorgan Chase trading loss, 270 Park Avenue, 2014 JPMorgan Chase data breach, J.P. Morgan & Co., List of largest banks, Jamie Dimon, JPMorgan Chase Building (Houston)
+    JPMorgan Chase, Chase Bank, JPMorgan Chase Tower (Houston), 2012 JPMorgan Chase trading loss, 270 Park Avenue, 2014 JPMorgan Chase data breach, Jamie Dimon, List of largest banks, J.P. Morgan & Co., J.P. Morgan Reserve Card
     
     
     
@@ -396,7 +398,7 @@ page.get_parse()    # parses the wikipedia article
 
 
 
-    <wptools.page.WPToolsPage at 0x1e497c01408>
+    <wptools.page.WPToolsPage at 0x23702f680c8>
 
 
 
@@ -492,161 +494,6 @@ for company in companies:
 ```
 
     en.wikipedia.org (parse) Walmart
-    en.wikipedia.org (imageinfo) File:Walmart Home Office.jpg
-    Walmart (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:Walmart H...
-      infobox: <dict(30)> name, logo, logo_caption, image, image_size,...
-      iwlinks: <list(2)> https://commons.wikimedia.org/wiki/Category:W...
-      pageid: 33589
-      parsetree: <str(351698)> <root><template><title>short descriptio...
-      requests: <list(2)> parse, imageinfo
-      title: Walmart
-      wikibase: Q483551
-      wikidata_url: https://www.wikidata.org/wiki/Q483551
-      wikitext: <str(283370)> {{short description|American multination...
-    }
-    en.wikipedia.org (parse) ExxonMobil
-    ExxonMobil (en) data
-    {
-      infobox: <dict(24)> name, logo, logo_size, type, traded_as, ISIN...
-      iwlinks: <list(5)> https://commons.wikimedia.org/wiki/Category:E...
-      pageid: 18848197
-      parsetree: <str(195244)> <root><template><title>Short descriptio...
-      requests: <list(1)> parse
-      title: ExxonMobil
-      wikibase: Q156238
-      wikidata_url: https://www.wikidata.org/wiki/Q156238
-      wikitext: <str(160770)> {{Short description|American multination...
-    }
-    en.wikipedia.org (parse) Berkshire Hathaway
-    en.wikipedia.org (imageinfo) File:OmahaKiewitPlaza.jpg
-    Berkshire Hathaway (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:OmahaKiew...
-      infobox: <dict(26)> name, former_name, logo, logo_size, image, i...
-      iwlinks: <list(1)> https://commons.wikimedia.org/wiki/Category:B...
-      pageid: 314333
-      parsetree: <str(110613)> <root><template><title>short descriptio...
-      requests: <list(2)> parse, imageinfo
-      title: Berkshire Hathaway
-      wikibase: Q217583
-      wikidata_url: https://www.wikidata.org/wiki/Q217583
-      wikitext: <str(94041)> {{short description|American multinationa...
-    }
-    en.wikipedia.org (parse) Apple Inc.
-    en.wikipedia.org (imageinfo) File:Apple park cupertino 2019.jpg
-    Apple Inc. (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:Apple par...
-      infobox: <dict(35)> name, logo, logo_size, image, image_size, im...
-      iwlinks: <list(9)> https://commons.wikimedia.org/wiki/Apple_Inc....
-      pageid: 856
-      parsetree: <str(437121)> <root><template><title>Redirect</title>...
-      requests: <list(2)> parse, imageinfo
-      title: Apple Inc.
-      wikibase: Q312
-      wikidata_url: https://www.wikidata.org/wiki/Q312
-      wikitext: <str(351835)> {{Redirect|Apple (company)|other compani...
-    }
-    en.wikipedia.org (parse) UnitedHealth Group
-    UnitedHealth Group (en) data
-    {
-      infobox: <dict(19)> name, logo, type, traded_as, founder, key_pe...
-      pageid: 1845551
-      parsetree: <str(89052)> <root><template><title>Short description...
-      requests: <list(1)> parse
-      title: UnitedHealth Group
-      wikibase: Q2103926
-      wikidata_url: https://www.wikidata.org/wiki/Q2103926
-      wikitext: <str(75354)> {{Short description|American health care ...
-    }
-    en.wikipedia.org (parse) McKesson Corporation
-    McKesson Corporation (en) data
-    {
-      infobox: <dict(19)> name, logo, type, traded_as, founder, locati...
-      iwlinks: <list(1)> https://foundation.wikimedia.org/wiki/Terms_of_Use
-      pageid: 1041603
-      parsetree: <str(44511)> <root><template><title>Redirect</title><...
-      requests: <list(1)> parse
-      title: McKesson Corporation
-      wikibase: Q570473
-      wikidata_url: https://www.wikidata.org/wiki/Q570473
-      wikitext: <str(35385)> {{Redirect|McKesson}}{{short description|...
-    }
-    en.wikipedia.org (parse) CVS Health
-    CVS Health (en) data
-    {
-      infobox: <dict(30)> name, logo, logo_size, former_name, type, tr...
-      pageid: 10377597
-      parsetree: <str(71146)> <root><template><title>about</title><par...
-      requests: <list(1)> parse
-      title: CVS Health
-      wikibase: Q624375
-      wikidata_url: https://www.wikidata.org/wiki/Q624375
-      wikitext: <str(56445)> {{about|the parent company previously nam...
-    }
-    en.wikipedia.org (parse) Amazon (company)
-    en.wikipedia.org (imageinfo) File:Amazon Spheres 05.jpg
-    Amazon (company) (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:Amazon Sp...
-      infobox: <dict(33)> name, logo, logo_size, logo_caption, image, ...
-      iwlinks: <list(3)> https://commons.wikimedia.org/wiki/Category:A...
-      pageid: 90451
-      parsetree: <str(208612)> <root><template><title>pp</title><part>...
-      requests: <list(2)> parse, imageinfo
-      title: Amazon (company)
-      wikibase: Q3884
-      wikidata_url: https://www.wikidata.org/wiki/Q3884
-      wikitext: <str(163616)> {{pp|small=yes}}{{Short description|Amer...
-    }
-    en.wikipedia.org (parse) AT&T
-    en.wikipedia.org (imageinfo) File:AT&THQDallas.jpg
-    AT&T (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:AT&THQDal...
-      infobox: <dict(29)> name, logo, logo_caption, logo_size, image, ...
-      iwlinks: <list(1)> https://commons.wikimedia.org/wiki/Category:AT%26T
-      pageid: 17555269
-      parsetree: <str(155118)> <root><template><title>Short descriptio...
-      requests: <list(2)> parse, imageinfo
-      title: AT&T
-      wikibase: Q35476
-      wikidata_url: https://www.wikidata.org/wiki/Q35476
-      wikitext: <str(125355)> {{Short description|American multination...
-    }
-    en.wikipedia.org (parse) General Motors
-    en.wikipedia.org (imageinfo) File:RenCen.JPG
-    General Motors (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:RenCen.JP...
-      infobox: <dict(31)> name, former_name, logo, logo_size, image, i...
-      iwlinks: <list(2)> https://commons.wikimedia.org/wiki/Category:G...
-      pageid: 12102
-      parsetree: <str(245578)> <root><template><title>short descriptio...
-      requests: <list(2)> parse, imageinfo
-      title: General Motors
-      wikibase: Q81965
-      wikidata_url: https://www.wikidata.org/wiki/Q81965
-      wikitext: <str(198605)> {{short description|American automotive ...
-    }
-    en.wikipedia.org (parse) Ford Motor Company
-    en.wikipedia.org (imageinfo) File:FordGlassHouse.jpg
-    Ford Motor Company (en) data
-    {
-      image: <list(1)> {'kind': 'parse-image', 'file': 'File:FordGlass...
-      infobox: <dict(28)> name, logo, image, image_size, image_caption...
-      iwlinks: <list(8)> https://commons.wikimedia.org/wiki/Category:F...
-      pageid: 30433662
-      parsetree: <str(233947)> <root><template><title>short descriptio...
-      requests: <list(2)> parse, imageinfo
-      title: Ford Motor Company
-      wikibase: Q44294
-      wikidata_url: https://www.wikidata.org/wiki/Q44294
-      wikitext: <str(196686)> {{short description|American multination...
-    }
-    en.wikipedia.org (parse) AmerisourceBergen
     
 
 
@@ -654,7 +501,7 @@ for company in companies:
 
     error                                     Traceback (most recent call last)
 
-    <ipython-input-15-f63c42f71bd5> in <module>
+    <ipython-input-32-f63c42f71bd5> in <module>
           2     page = wptools.page(company) # create a page object
           3     try:
     ----> 4         page.get_parse() # call the API and parse the data
@@ -662,7 +509,7 @@ for company in companies:
           6             # if infobox is present
     
 
-    c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages\wptools\page.py in get_parse(self, show, proxy, timeout)
+    ~\Anaconda3\envs\tensorflow1\lib\site-packages\wptools\page.py in get_parse(self, show, proxy, timeout)
         601             raise ValueError("get_parse needs title or pageid")
         602 
     --> 603         self._get('parse', show, proxy, timeout)
@@ -670,7 +517,7 @@ for company in companies:
         605         return self
     
 
-    c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages\wptools\core.py in _get(self, action, show, proxy, timeout)
+    ~\Anaconda3\envs\tensorflow1\lib\site-packages\wptools\core.py in _get(self, action, show, proxy, timeout)
         173         qstr = self._query(action, qobj)
         174         req = self._request(proxy, timeout)
     --> 175         response = req.get(qstr, qobj.status)
@@ -678,7 +525,7 @@ for company in companies:
         177         self.cache[action]['query'] = qstr
     
 
-    c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages\wptools\request.py in get(self, url, status)
+    ~\Anaconda3\envs\tensorflow1\lib\site-packages\wptools\request.py in get(self, url, status)
          74             print("Requests DISABLED", file=sys.stderr)
          75         else:
     ---> 76             return self.curl_perform(crl)
@@ -686,7 +533,7 @@ for company in companies:
          78     def curl_perform(self, crl):
     
 
-    c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages\wptools\request.py in curl_perform(self, crl)
+    ~\Anaconda3\envs\tensorflow1\lib\site-packages\wptools\request.py in curl_perform(self, crl)
          82         bfr = BytesIO()
          83         crl.setopt(crl.WRITEFUNCTION, bfr.write)
     ---> 84         crl.perform()
@@ -694,7 +541,7 @@ for company in companies:
          86         if info:
     
 
-    error: (28, 'Operation timed out after 300279 milliseconds with 0 out of 0 bytes received')
+    error: (35, 'OpenSSL SSL_connect: Connection was reset in connection to en.wikipedia.org:443 ')
 
 
 Let's take a look at the first instance in `wiki_data` i.e. **Walmart**,

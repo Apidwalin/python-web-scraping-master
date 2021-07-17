@@ -24,7 +24,7 @@ train_graph = tf.Graph()
 
     ModuleNotFoundError                       Traceback (most recent call last)
 
-    <ipython-input-3-4f78cb41fd0b> in <module>
+    C:\Users\APIDWA~1\AppData\Local\Temp/ipykernel_5992/3901876379.py in <module>
           6 import matplotlib.pyplot as plt
           7 import numpy as np
     ----> 8 import imutils

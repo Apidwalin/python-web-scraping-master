@@ -13,76 +13,86 @@ Imports
 
     Collecting tensorflow==2.2.0
       Downloading tensorflow-2.2.0-cp37-cp37m-win_amd64.whl (459.2 MB)
-    Collecting h5py<2.11.0,>=2.10.0
-      Downloading h5py-2.10.0-cp37-cp37m-win_amd64.whl (2.5 MB)
-    Collecting gast==0.3.3
-      Downloading gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
-    Requirement already satisfied: opt-einsum>=2.3.2 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (3.3.0)
-    Collecting tensorboard<2.3.0,>=2.2.0
-      Downloading tensorboard-2.2.2-py3-none-any.whl (3.0 MB)
-    Requirement already satisfied: numpy<2.0,>=1.16.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.18.1)
-    Requirement already satisfied: absl-py>=0.7.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (0.13.0)
-    Requirement already satisfied: google-pasta>=0.1.8 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (0.2.0)
-    Requirement already satisfied: protobuf>=3.8.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (3.17.3)
-    Collecting scipy==1.4.1
-      Downloading scipy-1.4.1-cp37-cp37m-win_amd64.whl (30.9 MB)
-    Requirement already satisfied: grpcio>=1.8.6 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.34.1)
-    Requirement already satisfied: astunparse==1.6.3 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.6.3)
-    Collecting tensorflow-estimator<2.3.0,>=2.2.0
-      Downloading tensorflow_estimator-2.2.0-py2.py3-none-any.whl (454 kB)
-    Requirement already satisfied: wrapt>=1.11.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.12.1)
-    Requirement already satisfied: termcolor>=1.1.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.1.0)
-    Requirement already satisfied: six>=1.12.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.14.0)
-    Requirement already satisfied: wheel>=0.26 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (0.36.2)
-    Requirement already satisfied: keras-preprocessing>=1.1.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorflow==2.2.0) (1.1.2)
-    Requirement already satisfied: google-auth<2,>=1.6.3 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (1.33.0)
-    Requirement already satisfied: markdown>=2.6.8 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (3.2)
-    Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (0.4.4)
-    Requirement already satisfied: setuptools>=41.0.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (57.2.0)
-    Requirement already satisfied: requests<3,>=2.21.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (2.24.0)
-    Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (1.8.0)
-    Requirement already satisfied: werkzeug>=0.11.15 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (2.0.1)
-    Requirement already satisfied: cachetools<5.0,>=2.0.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from google-auth<2,>=1.6.3->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (4.2.2)
-    Requirement already satisfied: rsa<5,>=3.1.4 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from google-auth<2,>=1.6.3->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (4.7.2)
-    Requirement already satisfied: pyasn1-modules>=0.2.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from google-auth<2,>=1.6.3->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (0.2.8)
-    Requirement already satisfied: requests-oauthlib>=0.7.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (1.3.0)
-    Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (0.4.8)
-    Requirement already satisfied: chardet<4,>=3.0.2 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (3.0.4)
-    Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (1.25.11)
-    Requirement already satisfied: idna<3,>=2.5 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (2.10)
-    Requirement already satisfied: certifi>=2017.4.17 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests<3,>=2.21.0->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (2020.6.20)
-    Requirement already satisfied: oauthlib>=3.0.0 in c:\users\apidwalin\anaconda3\envs\tensorflow1\lib\site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.3.0,>=2.2.0->tensorflow==2.2.0) (3.1.1)
-    Installing collected packages: tensorflow-estimator, tensorboard, scipy, h5py, gast, tensorflow
-      Attempting uninstall: tensorflow-estimator
-        Found existing installation: tensorflow-estimator 2.5.0
-        Uninstalling tensorflow-estimator-2.5.0:
-          Successfully uninstalled tensorflow-estimator-2.5.0
-      Attempting uninstall: tensorboard
-        Found existing installation: tensorboard 2.5.0
-        Uninstalling tensorboard-2.5.0:
-          Successfully uninstalled tensorboard-2.5.0
-      Attempting uninstall: scipy
-        Found existing installation: scipy 1.7.0
-        Uninstalling scipy-1.7.0:
-          Successfully uninstalled scipy-1.7.0
-      Attempting uninstall: h5py
-        Found existing installation: h5py 3.1.0
-        Uninstalling h5py-3.1.0:
-          Successfully uninstalled h5py-3.1.0
-      Attempting uninstall: gast
-        Found existing installation: gast 0.4.0
-        Uninstalling gast-0.4.0:
-          Successfully uninstalled gast-0.4.0
-    Successfully installed gast-0.3.3 h5py-2.10.0 scipy-1.4.1 tensorboard-2.2.2 tensorflow-2.2.0 tensorflow-estimator-2.2.0
     
 
-    ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-    tensorflow-gpu 2.5.0 requires gast==0.4.0, but you have gast 0.3.3 which is incompatible.
-    tensorflow-gpu 2.5.0 requires h5py~=3.1.0, but you have h5py 2.10.0 which is incompatible.
-    tensorflow-gpu 2.5.0 requires numpy~=1.19.2, but you have numpy 1.18.1 which is incompatible.
-    tensorflow-gpu 2.5.0 requires six~=1.15.0, but you have six 1.14.0 which is incompatible.
-    tensorflow-gpu 2.5.0 requires tensorboard~=2.5, but you have tensorboard 2.2.2 which is incompatible.
-    tensorflow-gpu 2.5.0 requires tensorflow-estimator<2.6.0,>=2.5.0rc0, but you have tensorflow-estimator 2.2.0 which is incompatible.
+    ERROR: Exception:
+    Traceback (most recent call last):
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 438, in _error_catcher
+        yield
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 519, in read
+        data = self._fp.read(amt) if not fp_closed else b""
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py", line 62, in read
+        data = self.__fp.read(amt)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\http\client.py", line 457, in read
+        n = self.readinto(b)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\http\client.py", line 501, in readinto
+        n = self.fp.readinto(b)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\socket.py", line 589, in readinto
+        return self._sock.recv_into(b)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\ssl.py", line 1071, in recv_into
+        return self.read(nbytes, buffer)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\ssl.py", line 929, in read
+        return self._sslobj.read(len, buffer)
+    socket.timeout: The read operation timed out
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\cli\base_command.py", line 180, in _main
+        status = self.run(options, args)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\cli\req_command.py", line 205, in wrapper
+        return func(self, options, args)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\commands\install.py", line 319, in run
+        reqs, check_supported_wheels=not options.target_dir
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 128, in resolve
+        requirements, max_rounds=try_to_avoid_resolution_too_deep
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 473, in resolve
+        state = resolution.resolve(requirements, max_rounds=max_rounds)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 341, in resolve
+        name, crit = self._merge_into_criterion(r, parent=None)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 172, in _merge_into_criterion
+        if not criterion.candidates:
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\structs.py", line 139, in __bool__
+        return bool(self._sequence)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 143, in __bool__
+        return any(self)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 129, in <genexpr>
+        return (c for c in iterator if id(c) not in self._incompatible_ids)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 33, in _iter_built
+        candidate = func()
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 205, in _make_candidate_from_link
+        version=version,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 312, in __init__
+        version=version,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 151, in __init__
+        self.dist = self._prepare()
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 234, in _prepare
+        dist = self._prepare_distribution()
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 318, in _prepare_distribution
+        self._ireq, parallel_builds=True
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 508, in prepare_linked_requirement
+        return self._prepare_linked_requirement(req, parallel_builds)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 552, in _prepare_linked_requirement
+        self.download_dir, hashes
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 243, in unpack_url
+        hashes=hashes,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 102, in get_http_url
+        from_path, content_type = download(link, temp_dir.path)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\network\download.py", line 157, in __call__
+        for chunk in chunks:
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\cli\progress_bars.py", line 152, in iter
+        for x in it:
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\network\utils.py", line 86, in response_chunks
+        decode_content=False,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 576, in stream
+        data = self.read(amt=amt, decode_content=decode_content)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 541, in read
+        raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\contextlib.py", line 130, in __exit__
+        self.gen.throw(type, value, traceback)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 443, in _error_catcher
+        raise ReadTimeoutError(self._pool, None, "Read timed out.")
+    pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
     
 
 
@@ -109,7 +119,7 @@ python -m pip install .
 ```
 
 
-      File "<ipython-input-3-1cb5b0736a81>", line 3
+      File "C:\Users\APIDWA~1\AppData\Local\Temp/ipykernel_10400/820332112.py", line 3
         cd models/research/
                 ^
     SyntaxError: invalid syntax

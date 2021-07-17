@@ -36,7 +36,7 @@ import pandas as pd # importing the package and using `pd` as the alias
 print('Pandas version : {}'.format(pd.__version__))
 ```
 
-    Pandas version : 1.0.1
+    Pandas version : 1.1.3
     
 
 Suppose we wanted to create a dataframe as follows,

@@ -39,7 +39,7 @@ response.headers
 
 
 
-    {'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Accept-Encoding', 'Cache-Control': 'max-age=0, private', 'Pragma': 'cache', 'Server': 'openresty', 'X-Content-Type-Options': 'nosniff', 'X-Cache': 'HIT from squizedge.net', 'Date': 'Sat, 17 Jul 2021 03:22:35 GMT', 'Age': '41', 'Via': '1.1 squizedge.net', 'X-upgrade-enabled': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Expires': 'Sat, 17 Jul 2021 03:52:31 GMT', 'X-Request-ID': 'c87280a6-ae71-4360-9275-cfca6ca24f56', 'Content-Encoding': 'gzip'}
+    {'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Accept-Encoding', 'Cache-Control': 'max-age=0, private', 'Pragma': 'cache', 'Server': 'openresty', 'X-Content-Type-Options': 'nosniff', 'X-Cache': 'HIT from squizedge.net', 'Date': 'Sat, 17 Jul 2021 08:46:48 GMT', 'Age': '35', 'Via': '1.1 squizedge.net', 'X-upgrade-enabled': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Expires': 'Sat, 17 Jul 2021 09:16:30 GMT', 'X-Request-ID': 'd9ffef6b-f9d2-4064-9a63-5f224a72812a', 'Content-Encoding': 'gzip'}
 
 
 

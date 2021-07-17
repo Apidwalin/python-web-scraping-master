@@ -25,12 +25,170 @@ Important: If you're running on a local machine, be sure to follow the [installa
 !pip install tf_slim
 ```
 
+    Collecting tensorflow==2.*
+      Downloading tensorflow-2.6.0rc1-cp37-cp37m-win_amd64.whl (423.2 MB)
+    
+
+    ERROR: Exception:
+    Traceback (most recent call last):
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 438, in _error_catcher
+        yield
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 519, in read
+        data = self._fp.read(amt) if not fp_closed else b""
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py", line 62, in read
+        data = self.__fp.read(amt)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\http\client.py", line 457, in read
+        n = self.readinto(b)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\http\client.py", line 501, in readinto
+        n = self.fp.readinto(b)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\socket.py", line 589, in readinto
+        return self._sock.recv_into(b)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\ssl.py", line 1071, in recv_into
+        return self.read(nbytes, buffer)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\ssl.py", line 929, in read
+        return self._sslobj.read(len, buffer)
+    socket.timeout: The read operation timed out
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\cli\base_command.py", line 180, in _main
+        status = self.run(options, args)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\cli\req_command.py", line 205, in wrapper
+        return func(self, options, args)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\commands\install.py", line 319, in run
+        reqs, check_supported_wheels=not options.target_dir
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 128, in resolve
+        requirements, max_rounds=try_to_avoid_resolution_too_deep
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 473, in resolve
+        state = resolution.resolve(requirements, max_rounds=max_rounds)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 341, in resolve
+        name, crit = self._merge_into_criterion(r, parent=None)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 172, in _merge_into_criterion
+        if not criterion.candidates:
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\resolvelib\structs.py", line 139, in __bool__
+        return bool(self._sequence)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 143, in __bool__
+        return any(self)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 129, in <genexpr>
+        return (c for c in iterator if id(c) not in self._incompatible_ids)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 33, in _iter_built
+        candidate = func()
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 205, in _make_candidate_from_link
+        version=version,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 312, in __init__
+        version=version,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 151, in __init__
+        self.dist = self._prepare()
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 234, in _prepare
+        dist = self._prepare_distribution()
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\resolution\resolvelib\candidates.py", line 318, in _prepare_distribution
+        self._ireq, parallel_builds=True
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 508, in prepare_linked_requirement
+        return self._prepare_linked_requirement(req, parallel_builds)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 552, in _prepare_linked_requirement
+        self.download_dir, hashes
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 243, in unpack_url
+        hashes=hashes,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\operations\prepare.py", line 102, in get_http_url
+        from_path, content_type = download(link, temp_dir.path)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\network\download.py", line 157, in __call__
+        for chunk in chunks:
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\cli\progress_bars.py", line 152, in iter
+        for x in it:
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_internal\network\utils.py", line 86, in response_chunks
+        decode_content=False,
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 576, in stream
+        data = self.read(amt=amt, decode_content=decode_content)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 541, in read
+        raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\contextlib.py", line 130, in __exit__
+        self.gen.throw(type, value, traceback)
+      File "c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\pip\_vendor\urllib3\response.py", line 443, in _error_catcher
+        raise ReadTimeoutError(self._pool, None, "Read timed out.")
+    pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+    
+
+    Collecting tf_slim
+      Using cached tf_slim-1.1.0-py2.py3-none-any.whl (352 kB)
+    Requirement already satisfied: absl-py>=0.2.2 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from tf_slim) (0.9.0)
+    Requirement already satisfied: six in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from absl-py>=0.2.2->tf_slim) (1.15.0)
+    Installing collected packages: tf-slim
+    Successfully installed tf-slim-1.1.0
+    
+
 Make sure you have `pycocotools` installed
 
 
 ```python
 !pip install pycocotools
 ```
+
+    Collecting pycocotools
+      Using cached pycocotools-2.0.2.tar.gz (23 kB)
+    Requirement already satisfied: setuptools>=18.0 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from pycocotools) (57.2.0)
+    Requirement already satisfied: cython>=0.27.3 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from pycocotools) (0.29.24)
+    Requirement already satisfied: matplotlib>=2.1.0 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\matplotlib-3.4.2-py3.7-win-amd64.egg (from pycocotools) (3.4.2)
+    Requirement already satisfied: cycler>=0.10 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\cycler-0.10.0-py3.7.egg (from matplotlib>=2.1.0->pycocotools) (0.10.0)
+    Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\kiwisolver-1.3.1-py3.7-win-amd64.egg (from matplotlib>=2.1.0->pycocotools) (1.3.1)
+    Requirement already satisfied: numpy>=1.16 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from matplotlib>=2.1.0->pycocotools) (1.19.1)
+    Requirement already satisfied: pillow>=6.2.0 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from matplotlib>=2.1.0->pycocotools) (8.3.1)
+    Requirement already satisfied: pyparsing>=2.2.1 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from matplotlib>=2.1.0->pycocotools) (2.4.7)
+    Requirement already satisfied: python-dateutil>=2.7 in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from matplotlib>=2.1.0->pycocotools) (2.8.2)
+    Requirement already satisfied: six in c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages (from cycler>=0.10->matplotlib>=2.1.0->pycocotools) (1.15.0)
+    Building wheels for collected packages: pycocotools
+      Building wheel for pycocotools (setup.py): started
+      Building wheel for pycocotools (setup.py): finished with status 'error'
+      Running setup.py clean for pycocotools
+    Failed to build pycocotools
+    Installing collected packages: pycocotools
+        Running setup.py install for pycocotools: started
+        Running setup.py install for pycocotools: finished with status 'error'
+    
+
+      ERROR: Command errored out with exit status 1:
+       command: 'c:\users\apidwalin\anaconda3\envs\tf\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\APIDWA~1\\AppData\\Local\\Temp\\pip-install-jt0cdwch\\pycocotools_ad600866e39342aa97877c453bcad251\\setup.py'"'"'; __file__='"'"'C:\\Users\\APIDWA~1\\AppData\\Local\\Temp\\pip-install-jt0cdwch\\pycocotools_ad600866e39342aa97877c453bcad251\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\APIDWA~1\AppData\Local\Temp\pip-wheel-slx_95l4'
+           cwd: C:\Users\APIDWA~1\AppData\Local\Temp\pip-install-jt0cdwch\pycocotools_ad600866e39342aa97877c453bcad251\
+      Complete output (16 lines):
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build\lib.win-amd64-3.7
+      creating build\lib.win-amd64-3.7\pycocotools
+      copying pycocotools\coco.py -> build\lib.win-amd64-3.7\pycocotools
+      copying pycocotools\cocoeval.py -> build\lib.win-amd64-3.7\pycocotools
+      copying pycocotools\mask.py -> build\lib.win-amd64-3.7\pycocotools
+      copying pycocotools\__init__.py -> build\lib.win-amd64-3.7\pycocotools
+      running build_ext
+      cythoning pycocotools/_mask.pyx to pycocotools\_mask.c
+      c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\Cython\Compiler\Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: C:\Users\APIDWA~1\AppData\Local\Temp\pip-install-jt0cdwch\pycocotools_ad600866e39342aa97877c453bcad251\pycocotools\_mask.pyx
+        tree = Parsing.p_module(s, pxd, full_module_name)
+      building 'pycocotools._mask' extension
+      error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+      ----------------------------------------
+      ERROR: Failed building wheel for pycocotools
+        ERROR: Command errored out with exit status 1:
+         command: 'c:\users\apidwalin\anaconda3\envs\tf\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\APIDWA~1\\AppData\\Local\\Temp\\pip-install-jt0cdwch\\pycocotools_ad600866e39342aa97877c453bcad251\\setup.py'"'"'; __file__='"'"'C:\\Users\\APIDWA~1\\AppData\\Local\\Temp\\pip-install-jt0cdwch\\pycocotools_ad600866e39342aa97877c453bcad251\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\APIDWA~1\AppData\Local\Temp\pip-record-t45xcqg8\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\users\apidwalin\anaconda3\envs\tf\Include\pycocotools'
+             cwd: C:\Users\APIDWA~1\AppData\Local\Temp\pip-install-jt0cdwch\pycocotools_ad600866e39342aa97877c453bcad251\
+        Complete output (14 lines):
+        running install
+        running build
+        running build_py
+        creating build
+        creating build\lib.win-amd64-3.7
+        creating build\lib.win-amd64-3.7\pycocotools
+        copying pycocotools\coco.py -> build\lib.win-amd64-3.7\pycocotools
+        copying pycocotools\cocoeval.py -> build\lib.win-amd64-3.7\pycocotools
+        copying pycocotools\mask.py -> build\lib.win-amd64-3.7\pycocotools
+        copying pycocotools\__init__.py -> build\lib.win-amd64-3.7\pycocotools
+        running build_ext
+        skipping 'pycocotools\_mask.c' Cython extension (up-to-date)
+        building 'pycocotools._mask' extension
+        error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+        ----------------------------------------
+    ERROR: Command errored out with exit status 1: 'c:\users\apidwalin\anaconda3\envs\tf\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\APIDWA~1\\AppData\\Local\\Temp\\pip-install-jt0cdwch\\pycocotools_ad600866e39342aa97877c453bcad251\\setup.py'"'"'; __file__='"'"'C:\\Users\\APIDWA~1\\AppData\\Local\\Temp\\pip-install-jt0cdwch\\pycocotools_ad600866e39342aa97877c453bcad251\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\APIDWA~1\AppData\Local\Temp\pip-record-t45xcqg8\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\users\apidwalin\anaconda3\envs\tf\Include\pycocotools' Check the logs for full command output.
+    
 
 Get `tensorflow/models` or `cd` to parent directory of the repository.
 
@@ -56,12 +214,18 @@ cd models/research/
 protoc object_detection/protos/*.proto --python_out=.
 ```
 
+    Couldn't find program: 'bash'
+    
+
 
 ```bash
 %%bash 
 cd models/research
 pip install .
 ```
+
+    Couldn't find program: 'bash'
+    
 
 ### Imports
 
@@ -74,10 +238,7 @@ import sys
 import tarfile
 import tensorflow as tf
 import zipfile
-from object_detection.utils import shape_utils
-from object_detection.core import standard_fields as fields
-import matplotlib; matplotlib.use('Agg')
-import matplotlib.pyplot as plt
+
 from collections import defaultdict
 from io import StringIO
 from matplotlib import pyplot as plt
@@ -152,6 +313,16 @@ TEST_IMAGE_PATHS = sorted(list(PATH_TO_TEST_IMAGES_DIR.glob("*.jpg")))
 TEST_IMAGE_PATHS
 ```
 
+
+
+
+    [WindowsPath('models/research/object_detection/test_images/dog&cat.jpg'),
+     WindowsPath('models/research/object_detection/test_images/image1.jpg'),
+     WindowsPath('models/research/object_detection/test_images/image2.jpg'),
+     WindowsPath('models/research/object_detection/test_images/puppy.jpg')]
+
+
+
 # Detection
 
 Load an object detection model:
@@ -161,6 +332,40 @@ Load an object detection model:
 model_name = 'ssd_mobilenet_v1_coco_2017_11_17'
 detection_model = load_model(model_name)
 ```
+
+    WARNING:tensorflow:From C:\Users\APIDWA~1\AppData\Local\Temp/ipykernel_2120/1723068443.py:11: load (from tensorflow.python.saved_model.loader_impl) is deprecated and will be removed in a future version.
+    Instructions for updating:
+    This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.loader.load or tf.compat.v1.saved_model.load. There will be a new function for importing SavedModels in Tensorflow 2.0.
+    
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    C:\Users\APIDWA~1\AppData\Local\Temp/ipykernel_2120/2266027781.py in <module>
+          1 model_name = 'ssd_mobilenet_v1_coco_2017_11_17'
+    ----> 2 detection_model = load_model(model_name)
+    
+
+    C:\Users\APIDWA~1\AppData\Local\Temp/ipykernel_2120/1723068443.py in load_model(model_name)
+          9   model_dir = pathlib.Path(model_dir)/"saved_model"
+         10 
+    ---> 11   model = tf.saved_model.load(str(model_dir))
+         12 
+         13   return model
+    
+
+    c:\users\apidwalin\anaconda3\envs\tf\lib\site-packages\tensorflow_core\python\util\deprecation.py in new_func(*args, **kwargs)
+        322               'in a future version' if date is None else ('after %s' % date),
+        323               instructions)
+    --> 324       return func(*args, **kwargs)
+        325     return tf_decorator.make_decorator(
+        326         func, new_func, 'deprecated',
+    
+
+    TypeError: load() missing 2 required positional arguments: 'tags' and 'export_dir'
+
 
 Check the model's input signature, it expects a batch of 3-color images of type uint8:
 
@@ -270,14 +475,4 @@ masking_model.output_shapes
 ```python
 for image_path in TEST_IMAGE_PATHS:
   show_inference(masking_model, image_path)
-```
-
-
-```python
-import os
-import ipyparallel as ipp
-
-rc = ipp.Client()
-ar = rc[:].apply_async(os.getpid)
-pid_map = ar.get_dict()
 ```

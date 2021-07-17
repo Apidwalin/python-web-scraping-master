@@ -27,7 +27,7 @@ urllib.request.urlretrieve(url, 'infoboxes.json')
 
 
 
-    ('infoboxes.json', <http.client.HTTPMessage at 0x1ea878f3f48>)
+    ('infoboxes.json', <http.client.HTTPMessage at 0x20aa5729bc8>)
 
 
 
@@ -154,7 +154,7 @@ for x in wiki_data:
 print(products)
 ```
 
-    ['pet supplies', 'fitness', 'home', 'footwear', 'clothing', 'music', 'beauty', 'jewelry', 'craft supplies', 'photo finishing', 'health', 'toys', 'home improvement', 'electronics', 'auto', 'movies', 'sporting goods', 'grocery', 'party supplies', 'furniture', 'natural gas', 'crude oil', 'power generation', 'petrochemicals', 'oil products', 'investment', 'mass media', 'diversified investments', 'restaurants', 'final good', 'insurance', 'automotive', 'sports equipment', 'casualty insurance', 'real estate', 'toys', 'public utility', 'types', 'sporting goods', 'automotive industry', 'utilities', 'property', 'media', 'aerospace', 'food processing', 'consumer products', 'internet', 'ipod', 'ipados', 'tvos', 'homepod', 'ipad', 'application', 'macintosh', 'ios', 'apple tv', 'logic pro', 'macos', 'ilife', 'iphone', 'garageband', 'iwork', 'apple watch', 'final cut pro', 'siri', 'watchos', 'shazam', 'services', 'ingenix', 'service', 'uniprise', 'economics', 'specialized care services', 'health care', 'pharmaceuticals', 'health care services', 'medical technology', 'amazon fire tv', 'amazon kindle', 'amazon fire tablet', 'amazon echo', 'amazon fire', 'fire os', 'amazon fire os', 'film production', 'over-the-top media services', 'mobile telephones', 'podcasts', 'network security', 'digital television', 'news agency', 'landline', 'pay television', 'iptv', 'broadband', 'video games', 'sports management', 'home security', 'cable television', 'internet service provider', 'satellite television', 'television production', 'filmmaking', 'internet services', 'fixed-line telephones', 'publishing', 'ott services', 'mobile phone', 'automobiles', 'commercial vehicles', 'automobile parts', 'car', 'suvs', 'list of auto parts', 'luxury vehicles', 'commercial vehicles', 'automotive parts', 'luxury car', 'car', 'automobiles', 'commercial vehicle', 'pickup trucks', 'pharmacy services', 'pharmaceuticals', 'natural gas', 'marketing brands', 'other', 'petroleum', 'see chevron products', 'petrochemicals', 'pharmaceutical products', 'services', 'medical', 'digital media', 'broadband', 'internet of things', 'telematics', 'landline', 'cable television', 'digital television', 'iptv', 'mobile phone', 'internet', 'other specialty', 'supermarket', 'supercenter', 'superstore', 'finance', 'energy', 'electric power distribution', 'lighting', 'wind turbines', 'software', 'aircraft engines', 'electric motors', 'electrical distribution', 'health care', 'drug store', 'pharmacy', 'venture capital', 'broker services', 'stock trading', 'financial markets', 'information processing', 'wholesale funding', 'institutional investing', 'mobile banking', 'asset allocation', 'credit cards', 'custodian banking', 'prime brokerage', 'money market trading', 'bond', 'brokerage', 'retail banking', 'underwriting', 'investment', 'security services', 'bond trading', 'digital banking', 'loan servicing', 'mortgage', 'securities lending', 'backed securities', 'hedge funds', 'mutual funds', 'portfolios', 'alternative financial services', 'wholesale mortgage lenders', 'investment capital', 'remittance', 'stock trader', 'trustee services', 'insurance', 'financial capital', 'mortgage brokers', 'subprime lending', 'security', 'american depositary receipts', 'institutional investor', 'wealth management', 'debt settlement', 'collateralized debt obligations', 'index funds', 'mortgage-backed security', 'wire transfers', 'foreign exchange market', 'risk management', 'asset management', 'mortgage loans', 'commodity market', 'mortgage brokering', 'private banking', 'commercial banking', 'exchange-traded funds', 'investment management', 'retail', 'credit derivative trading', 'capital market services', 'finance', 'merchant services', 'estate planning', 'wholesale mortgage lending', 'futures exchange', 'investment banking', 'portfolio', 'commodities trading', 'treasury services', 'private equity', 'credit default swap', 'financial analysis', 'pension funds', 'currency exchange']
+    ['grocery', 'electronics', 'home', 'sporting goods', 'footwear', 'photo finishing', 'furniture', 'music', 'party supplies', 'clothing', 'beauty', 'toys', 'home improvement', 'craft supplies', 'movies', 'health', 'pet supplies', 'jewelry', 'auto', 'fitness', 'oil products', 'crude oil', 'petrochemicals', 'power generation', 'natural gas', 'diversified investments', 'automotive', 'public utility', 'restaurants', 'real estate', 'sporting goods', 'automotive industry', 'aerospace', 'casualty insurance', 'types', 'utilities', 'consumer products', 'internet', 'food processing', 'media', 'investment', 'sports equipment', 'final good', 'toys', 'mass media', 'property', 'insurance', 'ios', 'iphone', 'ipod', 'apple tv', 'homepod', 'shazam', 'ipados', 'macintosh', 'final cut pro', 'ilife', 'ipad', 'application', 'apple watch', 'siri', 'watchos', 'tvos', 'logic pro', 'macos', 'garageband', 'iwork', 'health care', 'services', 'economics', 'uniprise', 'specialized care services', 'ingenix', 'service', 'health care services', 'pharmaceuticals', 'medical technology', 'fire os', 'amazon fire os', 'amazon fire tablet', 'amazon kindle', 'amazon echo', 'amazon fire', 'amazon fire tv', 'filmmaking', 'home security', 'landline', 'cable television', 'internet service provider', 'iptv', 'digital television', 'broadband', 'news agency', 'internet services', 'mobile phone', 'film production', 'podcasts', 'television production', 'sports management', 'mobile telephones', 'satellite television', 'over-the-top media services', 'publishing', 'video games', 'ott services', 'fixed-line telephones', 'pay television', 'network security', 'car', 'automobile parts', 'commercial vehicles', 'automobiles', 'automotive parts', 'car', 'luxury vehicles', 'list of auto parts', 'commercial vehicle', 'suvs', 'automobiles', 'luxury car', 'pickup trucks', 'commercial vehicles', 'pharmacy services', 'pharmaceuticals', 'other', 'see chevron products', 'petrochemicals', 'natural gas', 'petroleum', 'marketing brands', 'pharmaceutical products', 'services', 'medical', 'mobile phone', 'digital television', 'broadband', 'digital media', 'landline', 'cable television', 'iptv', 'internet of things', 'telematics', 'internet', 'superstore', 'other specialty', 'supermarket', 'supercenter', 'energy', 'aircraft engines', 'wind turbines', 'electrical distribution', 'electric power distribution', 'finance', 'software', 'lighting', 'health care', 'electric motors', 'drug store', 'pharmacy', 'futures exchange', 'credit derivative trading', 'information processing', 'credit default swap', 'commodities trading', 'finance', 'venture capital', 'index funds', 'exchange-traded funds', 'merchant services', 'commodity market', 'hedge funds', 'broker services', 'mortgage', 'remittance', 'wholesale mortgage lenders', 'pension funds', 'currency exchange', 'custodian banking', 'bond trading', 'asset management', 'trustee services', 'investment banking', 'prime brokerage', 'retail', 'loan servicing', 'mortgage brokering', 'wealth management', 'financial markets', 'backed securities', 'institutional investing', 'estate planning', 'american depositary receipts', 'investment management', 'credit cards', 'foreign exchange market', 'portfolio', 'private banking', 'private equity', 'retail banking', 'underwriting', 'wholesale funding', 'investment', 'subprime lending', 'mortgage loans', 'capital market services', 'mortgage-backed security', 'securities lending', 'money market trading', 'wire transfers', 'portfolios', 'wholesale mortgage lending', 'mobile banking', 'security', 'financial analysis', 'investment capital', 'risk management', 'bond', 'digital banking', 'stock trading', 'collateralized debt obligations', 'financial capital', 'treasury services', 'stock trader', 'mortgage brokers', 'security services', 'debt settlement', 'mutual funds', 'brokerage', 'asset allocation', 'insurance', 'commercial banking', 'institutional investor', 'alternative financial services']
     
 
 Now let's create a wordcloud function which will visually inform us about which products are more prominent than the others. The size of the word would indicate its frequency.
@@ -241,7 +241,8 @@ for i, x in enumerate(wiki_data):
 print(industries)
 ```
 
-    ['retail', 'oil', 'gas', 'energy', 'gas industry', 'energy industry', 'conglomerate', 'company', 'computer software', 'semiconductors', 'digital distribution', 'fabless manufacturing', 'fabless silicon design', 'computer hardware', 'financial technology', 'consumer electronics', 'cloud computing', 'artificial intelligence', 'managed health care', 'healthcare', 'retail', 'health care', 'digital distribution', 'consumer electronics', 'cloud computing', 'e-commerce', 'artificial intelligence', 'grocery stores', 'mass media', 'technology company', 'technology', 'telecommunications industry', 'entertainment', 'telecommunications', 'automotive industry', 'automotive', 'automotive industry', 'automotive', 'pharmaceutical', 'oil', 'gas', 'gas industry', 'pharmaceuticals', 'retail', 'telecommunications', 'mass media', 'telecommunications industry', 'retail', 'conglomerate', 'company', 'retail', 'pharmaceutical', 'financial services', 'banking']
+    The history saving thread hit an unexpected error (OperationalError('database is locked')).History will not be written to the database.
+    ['retail', 'oil', 'energy', 'gas', 'energy industry', 'gas industry', 'conglomerate', 'company', 'consumer electronics', 'digital distribution', 'financial technology', 'fabless manufacturing', 'artificial intelligence', 'semiconductors', 'cloud computing', 'computer hardware', 'computer software', 'fabless silicon design', 'managed health care', 'healthcare', 'retail', 'health care', 'consumer electronics', 'digital distribution', 'artificial intelligence', 'e-commerce', 'cloud computing', 'grocery stores', 'technology', 'entertainment', 'telecommunications industry', 'technology company', 'telecommunications', 'mass media', 'automotive industry', 'automotive', 'automotive industry', 'automotive', 'pharmaceutical', 'oil', 'gas', 'gas industry', 'pharmaceuticals', 'retail', 'telecommunications', 'telecommunications industry', 'mass media', 'retail', 'conglomerate', 'company', 'pharmaceutical', 'retail', 'banking', 'financial services']
     
 
 Just as before let's create a wordcloud for `industry`,
@@ -616,35 +617,35 @@ df_wiki.head()
     <tr>
       <th>0</th>
       <td>Walmart</td>
-      <td>pet supplies, fitness, home, footwear, clothin...</td>
+      <td>grocery, electronics, home, sporting goods, fo...</td>
       <td>retail</td>
       <td>219.295 billion</td>
     </tr>
     <tr>
       <th>1</th>
       <td>ExxonMobil</td>
-      <td>natural gas, crude oil, power generation, petr...</td>
-      <td>oil, gas, energy, gas industry, energy industry</td>
+      <td>oil products, crude oil, petrochemicals, power...</td>
+      <td>oil, energy, gas, energy industry, gas industry</td>
       <td>346.2 billion</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Berkshire Hathaway</td>
-      <td>investment, mass media, diversified investment...</td>
+      <td>diversified investments, automotive, public ut...</td>
       <td>conglomerate, company</td>
       <td>707.8 billion</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Apple Inc.</td>
-      <td>ipod, ipados, tvos, homepod, ipad, application...</td>
-      <td>computer software, semiconductors, digital dis...</td>
+      <td>ios, iphone, ipod, apple tv, homepod, shazam, ...</td>
+      <td>consumer electronics, digital distribution, fi...</td>
       <td>338.516 billion</td>
     </tr>
     <tr>
       <th>4</th>
       <td>UnitedHealth Group</td>
-      <td>services, ingenix, service, uniprise, economic...</td>
+      <td>health care, services, economics, uniprise, sp...</td>
       <td>managed health care</td>
       <td>173.889 billion</td>
     </tr>
@@ -676,7 +677,7 @@ urllib.request.urlretrieve(url, 'fortune_500_companies.csv')
 
 
 
-    ('fortune_500_companies.csv', <http.client.HTTPMessage at 0x1ea87462448>)
+    ('fortune_500_companies.csv', <http.client.HTTPMessage at 0x20aa58c4388>)
 
 
 
@@ -724,7 +725,7 @@ df
       <td>Walmart</td>
       <td>http://www.stock.walmart.com</td>
       <td>Walmart</td>
-      <td>pet supplies, fitness, home, footwear, clothin...</td>
+      <td>grocery, electronics, home, sporting goods, fo...</td>
       <td>retail</td>
       <td>219.295 billion</td>
     </tr>
@@ -734,8 +735,8 @@ df
       <td>Exxon Mobil</td>
       <td>http://www.exxonmobil.com</td>
       <td>ExxonMobil</td>
-      <td>natural gas, crude oil, power generation, petr...</td>
-      <td>oil, gas, energy, gas industry, energy industry</td>
+      <td>oil products, crude oil, petrochemicals, power...</td>
+      <td>oil, energy, gas, energy industry, gas industry</td>
       <td>346.2 billion</td>
     </tr>
     <tr>
@@ -744,7 +745,7 @@ df
       <td>Berkshire Hathaway</td>
       <td>http://www.berkshirehathaway.com</td>
       <td>Berkshire Hathaway</td>
-      <td>investment, mass media, diversified investment...</td>
+      <td>diversified investments, automotive, public ut...</td>
       <td>conglomerate, company</td>
       <td>707.8 billion</td>
     </tr>
@@ -754,8 +755,8 @@ df
       <td>Apple</td>
       <td>http://www.apple.com</td>
       <td>Apple Inc.</td>
-      <td>ipod, ipados, tvos, homepod, ipad, application...</td>
-      <td>computer software, semiconductors, digital dis...</td>
+      <td>ios, iphone, ipod, apple tv, homepod, shazam, ...</td>
+      <td>consumer electronics, digital distribution, fi...</td>
       <td>338.516 billion</td>
     </tr>
     <tr>
@@ -764,7 +765,7 @@ df
       <td>UnitedHealth Group</td>
       <td>http://www.unitedhealthgroup.com</td>
       <td>UnitedHealth Group</td>
-      <td>services, ingenix, service, uniprise, economic...</td>
+      <td>health care, services, economics, uniprise, sp...</td>
       <td>managed health care</td>
       <td>173.889 billion</td>
     </tr>
@@ -774,7 +775,7 @@ df
       <td>McKesson</td>
       <td>http://www.mckesson.com</td>
       <td>McKesson Corporation</td>
-      <td>pharmaceuticals, health care services, medical...</td>
+      <td>health care services, pharmaceuticals, medical...</td>
       <td>healthcare</td>
       <td>60.381 billion</td>
     </tr>
@@ -794,8 +795,8 @@ df
       <td>Amazon.com</td>
       <td>http://www.amazon.com</td>
       <td>Amazon (company)</td>
-      <td>amazon fire tv, amazon kindle, amazon fire tab...</td>
-      <td>digital distribution, consumer electronics, cl...</td>
+      <td>fire os, amazon fire os, amazon fire tablet, a...</td>
+      <td>consumer electronics, digital distribution, ar...</td>
       <td>162.648 billion</td>
     </tr>
     <tr>
@@ -804,8 +805,8 @@ df
       <td>AT&amp;T</td>
       <td>http://www.att.com</td>
       <td>AT&amp;T</td>
-      <td>film production, over-the-top media services, ...</td>
-      <td>mass media, technology company, technology, te...</td>
+      <td>filmmaking, home security, landline, cable tel...</td>
+      <td>technology, entertainment, telecommunications ...</td>
       <td>531.0 billion</td>
     </tr>
     <tr>
@@ -814,7 +815,7 @@ df
       <td>General Motors</td>
       <td>http://www.gm.com</td>
       <td>General Motors</td>
-      <td>automobiles, commercial vehicles, automobile p...</td>
+      <td>car, automobile parts, commercial vehicles, au...</td>
       <td>automotive industry, automotive</td>
       <td>227.339 billion</td>
     </tr>
@@ -824,7 +825,7 @@ df
       <td>Ford Motor</td>
       <td>http://www.corporate.ford.com</td>
       <td>Ford Motor Company</td>
-      <td>suvs, list of auto parts, luxury vehicles, com...</td>
+      <td>automotive parts, car, luxury vehicles, list o...</td>
       <td>automotive industry, automotive</td>
       <td>256.54 billion</td>
     </tr>
@@ -844,7 +845,7 @@ df
       <td>Chevron</td>
       <td>http://www.chevron.com</td>
       <td>Chevron Corporation</td>
-      <td>natural gas, marketing brands, other, petroleu...</td>
+      <td>other, see chevron products, petrochemicals, n...</td>
       <td>oil, gas, gas industry</td>
       <td>253.9 billion</td>
     </tr>
@@ -874,8 +875,8 @@ df
       <td>Verizon</td>
       <td>http://www.verizon.com</td>
       <td>Verizon Communications</td>
-      <td>digital media, broadband, internet of things, ...</td>
-      <td>telecommunications, mass media, telecommunicat...</td>
+      <td>mobile phone, digital television, broadband, d...</td>
+      <td>telecommunications, telecommunications industr...</td>
       <td>264.82 billion</td>
     </tr>
     <tr>
@@ -884,7 +885,7 @@ df
       <td>Kroger</td>
       <td>http://www.thekrogerco.com</td>
       <td>Kroger</td>
-      <td>other specialty, supermarket, supercenter, sup...</td>
+      <td>superstore, other specialty, supermarket, supe...</td>
       <td>retail</td>
       <td>38.11 billion</td>
     </tr>
@@ -894,7 +895,7 @@ df
       <td>General Electric</td>
       <td>http://www.ge.com</td>
       <td>General Electric</td>
-      <td>finance, energy, electric power distribution, ...</td>
+      <td>energy, aircraft engines, wind turbines, elect...</td>
       <td>conglomerate, company</td>
       <td>309.129 billion</td>
     </tr>
@@ -905,7 +906,7 @@ df
       <td>http://www.walgreensbootsalliance.com</td>
       <td>Walgreens Boots Alliance</td>
       <td>drug store, pharmacy</td>
-      <td>retail, pharmaceutical</td>
+      <td>pharmaceutical, retail</td>
       <td>67.59 billion</td>
     </tr>
     <tr>
@@ -914,8 +915,8 @@ df
       <td>JPMorgan Chase</td>
       <td>http://www.jpmorganchase.com</td>
       <td>JPMorgan Chase</td>
-      <td>venture capital, broker services, stock tradin...</td>
-      <td>financial services, banking</td>
+      <td>futures exchange, credit derivative trading, i...</td>
+      <td>banking, financial services</td>
       <td>2.687 trillion</td>
     </tr>
   </tbody>
