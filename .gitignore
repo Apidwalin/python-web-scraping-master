@@ -1,0 +1,6 @@
+# ignore the following files and folders
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+venv/
+*/venv/
+.DS_Store
